@@ -4,6 +4,7 @@ namespace PasswordChecker
 {
   class Program
   {
+        // Main method to validate the strength of a password based on its length and character composition.
     public static void Main(string[] args)
     {
       int minLength = 8;

@@ -11,8 +11,10 @@ namespace CaesarCipher
       string message = "";
       Console.WriteLine("Enter message");
       message = Console.ReadLine().ToLower();
+      Console.WriteLine("Enter key");
+      int key = int.Parse(Console.ReadLine());
       char[] secretMessage = message.ToCharArray();
-      string newMessage = String.Join("", (Encrypt(secretMessage, 3)));
+      string newMessage = String.Join("", (Encrypt(secretMessage, key)));
       Console.WriteLine("Encrypted message: " + newMessage);
     }
     static char[] Encrypt(char[] secretMessage, int key) {
